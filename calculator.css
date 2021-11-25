@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.calc {
+  background-color: black;
+  color: white;
+  width: 400px;
+}
+
+.screen {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 40px;
+  padding: 20px 5px; /* 20 on top, 5 on the sides */
+  text-align: right;
+}
+
+.calc-button {
+  background-color: #d8d9db;
+  border: none;
+  border-radius: none; /* bc we want square buttons */
+  color: black;
+  cursor: pointer; /* lets ppl know this is a clickable thing*/
+  font-size: 40px;
+  height: 100px;
+  width: 24.5%; /* not 25% bc you want the small black gutter around then */
+}
+
+.calc-button:hover {
+  background-color: whitesmoke; /*people like when these are lighter*/
+}
+
+.calc-button:active {
+  background-color: lightgrey; /*people like when these are darker*/
+}
+
+.calc-button:last-child {
+  background-color: orange;
+  color: white;
+}
+
+.calc-button:last-child:hover {
+  background-color: rgb(236, 189, 101);
+}
+
+.calc-button:last-child:active {
+  background-color: rgb(190, 126, 6);
+}
+
+.double {
+  width: 49.7%;
+}
+
+.triple {
+  width: 74.8%;
+}
+
+.calc-row {
+  align-content: stretch;
+  display: flex; 
+  justify-content: space-between;
+  margin-bottom: 0.5%;
+}
